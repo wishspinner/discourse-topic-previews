@@ -8,11 +8,6 @@
   {{#if tilesStyle}}
     <div class="topic-header-grid">
       {{raw "list/topic-list-title" topic=topic tilesStyle=tilesStyle showTopicPostBadges=showTopicPostBadges}}
-      <div class="topic-category">
-        {{#if showCategoryBadge}}
-          {{category-link topic.category}}
-        {{/if}}
-      </div>
     </div>
   {{/if}}
 
@@ -27,12 +22,6 @@
         showTopicPostBadges=showTopicPostBadges
         homepage=parentView.homepage
         suggested=parentView.suggestedList}}
-
-      {{#if showCategoryBadge}}
-        <div class='topic-category'>
-          {{category-link topic.category}}
-        </div>
-      {{/if}}
 
       {{discourse-tags topic mode="list" tagsForUser=tagsForUser}}
     {{/unless}}
@@ -60,19 +49,12 @@
 </td>
 
 {{#unless tilesStyle}}
-  {{#if showCategoryColumn}}
-    {{raw "list/category-column" category=topic.category}}
-  {{/if}}
 
   {{#if showPosters}}
     {{raw "list/posters-column" posters=topic.posters}}
   {{/if}}
 
   {{raw "list/posts-count-column" topic=topic}}
-
-  {{#if showParticipants}}
-    {{raw "list/posters-column" posters=topic.participants}}
-  {{/if}}
 
   {{#if showLikes}}
     <td class="num likes">
