@@ -50,10 +50,6 @@
 
 {{#unless tilesStyle}}
 
-  {{#if showPosters}}
-    {{raw "list/posters-column" posters=topic.posters}}
-  {{/if}}
-
   {{raw "list/posts-count-column" topic=topic}}
 
   {{#if showLikes}}
@@ -75,7 +71,6 @@
       {{/if}}
     </td>
   {{/if}}
-
-  <td class="num views {{topic.viewsHeat}}">{{number topic.views numberKey="views_long"}}</td>
+  
   {{raw "list/activity-column" topic=topic class="num" tagName="td"}}
 {{/unless}}
