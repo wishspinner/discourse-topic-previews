@@ -18,7 +18,7 @@
     }
     // 3 columns when there is room
     @media screen and (min-width: 801px) {
-      width: calc((100% - 6px)/5);
+      width: calc((100% - 12px)/5);
     }
   }
 
