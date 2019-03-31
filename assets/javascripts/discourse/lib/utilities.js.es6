@@ -26,7 +26,10 @@ var renderUnboundPreview = function(thumbnails, params) {
   const url = previewUrl(thumbnails);
 
   if (!url) return '';
-
+  
+  if (url === 'http://pixologic.com/img/zbc-default.jpg') {
+    defImg = ' defaultImg';
+  }
   const opts = params.opts || {};
 
   if (!opts.tilesStyle && Discourse.Site.currentProp('mobileView')) {
