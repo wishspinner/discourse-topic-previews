@@ -9,6 +9,7 @@
     <div class="topic-header-grid">
       {{raw "list/topic-list-title" topic=topic tilesStyle=tilesStyle showTopicPostBadges=showTopicPostBadges}}
     </div>
+    {{raw "list/topic-excerpt" topic=topic}}
   {{/if}}
 
   {{#if showThumbnail}}
@@ -27,7 +28,7 @@
     {{/unless}}
 
     {{#if expandPinned}}
-      {{raw "list/topic-excerpt" topic=topic}}
+      
     {{/if}}
 
     {{#unless tilesStyle}}
