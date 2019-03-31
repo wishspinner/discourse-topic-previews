@@ -34,7 +34,7 @@ var renderUnboundPreview = function(thumbnails, params) {
   const opts = params.opts || {};
 
   if (!opts.tilesStyle && Discourse.Site.currentProp('mobileView')) {
-    return `<img class="thumbnail" src="${url}"/>`;
+    return `<img class="thumbnail ${defImg}" src="${url}"/>`;
   };
 
   const settings = Discourse.SiteSettings;
