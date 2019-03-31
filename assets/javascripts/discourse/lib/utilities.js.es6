@@ -56,7 +56,7 @@ var renderUnboundPreview = function(thumbnails, params) {
   const height_style = height ? `height:${height}${attrHeightSuffix};` : ``;
   const style = `${height_style}width:${width}${attrWidthSuffix}`;
 
-  return `<img class="${css_classes}" src="${url}" style="${style}" />`;
+  return `<img class="${css_classes} ${defImg}" src="${url}" style="${style}" />`;
 };
 
 var testImageUrl = function(thumbnails, callback) {
