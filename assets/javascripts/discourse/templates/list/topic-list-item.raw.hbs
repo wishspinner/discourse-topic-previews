@@ -73,5 +73,10 @@
     </td>
   {{/if}}
   
+  {{#if showParticipants}}	
+    {{raw "list/posters-column" posters=topic.participants}}	
+  {{/if}}
+  
+  
   {{raw "list/activity-column" topic=topic class="num" tagName="td"}}
 {{/unless}}
