@@ -10,12 +10,11 @@
       {{raw "list/topic-list-title" topic=topic tilesStyle=tilesStyle showTopicPostBadges=showTopicPostBadges}}
     </div>
     {{raw "list/topic-excerpt" topic=topic}}
-    {{raw "list/topic-thumbnail" topic=topic thumbnails=thumbnails category=category opts=thumbnailOpts}}
   {{/if}}
 
-  {{#if showThumbnail}}
+
     {{raw "list/topic-thumbnail" topic=topic thumbnails=thumbnails category=category opts=thumbnailOpts}}
-  {{/if}}
+
 
   <div class="topic-details">
     {{#unless tilesStyle}}
