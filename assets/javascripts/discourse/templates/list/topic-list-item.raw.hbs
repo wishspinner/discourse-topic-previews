@@ -51,8 +51,11 @@
 
 {{#unless tilesStyle}}
 
-  {{raw "list/posters-column" posters=topic.participants}}	
- 
+  {{#if showParticipants}}		
+    {{raw "list/posters-column" posters=topic.participants}}		
+  {{/if}}
+
+
   {{raw "list/posts-count-column" topic=topic}}
 
   {{#if showLikes}}
