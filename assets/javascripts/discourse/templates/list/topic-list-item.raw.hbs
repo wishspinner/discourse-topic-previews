@@ -61,7 +61,7 @@
   {{#if showLikes}}
     <td class="num likes">
       {{#if hasLikes}}
-        <a href='{{topic.summaryUrl}}'>
+        <a href='{{topic.summaryUrl}}/#post-top'>
           {{number topic.like_count}} {{d-icon 'heart'}}
         </a>
       {{/if}}
@@ -71,7 +71,7 @@
   {{#if showOpLikes}}
     <td class="num likes">
       {{#if hasOpLikes}}
-        <a href='{{topic.summaryUrl}}'>
+        <a href='{{topic.summaryUrl}}/#post-top'>
           {{number topic.op_like_count}} {{d-icon 'heart'}}
         </a>
       {{/if}}
