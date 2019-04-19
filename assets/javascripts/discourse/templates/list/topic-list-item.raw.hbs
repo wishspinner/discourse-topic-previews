@@ -52,7 +52,8 @@
 {{#unless tilesStyle}}
 
   {{#if showParticipants}}		
-    {{raw "list/posters-column" posters=topic.participants}}		
+    {{raw "list/posters-column" posters=topic.participants}}
+    {{@index}}: {{posters}}
   {{/if}}
 
 
