@@ -4,6 +4,7 @@
     {{raw "topic-status" topic=topic}}
     {{topic-link topic}}
     {{#if tilesStyle}}
+    <h6>{{i18n 'replies_lowercase' count=topic.replyCount}}</h6>
       {{#if mobileView}}
         {{#if topic.unseen}}
           <span class="badge-notification new-topic"></span>
