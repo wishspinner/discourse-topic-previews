@@ -4,7 +4,6 @@
     {{raw "topic-status" topic=topic}}
     {{topic-link topic}}
     {{#if tilesStyle}}
-    <h6>{{raw "list/posts-count-column" topic=topic}}</h6>
       {{#if mobileView}}
         {{#if topic.unseen}}
           <span class="badge-notification new-topic"></span>
@@ -37,4 +36,5 @@
 </div>
 {{#if tilesStyle}}
   {{raw "list/topic-users" tilesStyle=tilesStyle topic=topic posterNames=posterNames}}
+  <span class="post-count-meta">+{{raw "list/posts-count-column" topic=topic}}</span>
 {{/if}}
