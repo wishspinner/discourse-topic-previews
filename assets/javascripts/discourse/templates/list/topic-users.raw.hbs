@@ -1,6 +1,6 @@
 <div class='topic-users'>
   <div class="inline">
-  {{topic.participant_count}}
+  <h6>{{topic.posters.length}}</h6>
     {{#each topic.posters as |poster|}}
       <a href="{{poster.user.path}}" data-user-card="{{poster.user.username}}" class="{{poster.extras}}">
         {{avatar poster avatarTemplatePath="user.avatar_template" usernamePath="user.username" imageSize="small"}}
