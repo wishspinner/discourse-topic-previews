@@ -1,6 +1,5 @@
 <div class='topic-users'>
   <div class="inline">
-  <h6>{{i18n 'replies_lowercase' count=topic.replyCount}}</h6>
     {{#each topic.posters as |poster|}}
       <a href="{{poster.user.path}}" data-user-card="{{poster.user.username}}" class="{{poster.extras}}">
         {{avatar poster avatarTemplatePath="user.avatar_template" usernamePath="user.username" imageSize="small"}}
