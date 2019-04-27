@@ -1,21 +1,3 @@
-<div class="topic-meta">
-  {{raw-plugin-outlet name="topic-list-tiles-meta"}}
-  <div class="topic-views {{topic.viewsHeat}} inline sub">
-    {{number topic.views numberKey="views_long"}}
-    <span>{{i18n 'views_lowercase' count=topic.views}}</span>
-  </div>
-  <span class="middot inline sub"></span>
-
-  <span class="middot inline sub"></span>
-  <div class="{{class}} {{cold-age-class topic.createdAt startDate=topic.bumpedAt class=""}} activity inline sub" title="{{{topic.bumpedAtTitle}}}">
-    <a href="{{topic.lastPostUrl}}">{{format-date topic.bumpedAt format="medium-with-ago" noTitle="true"}}</a>
-  </div>
-    <div class='topic-replies posts-map {{likesHeat}} inline sub' title='{{title}}'>
-    <a href class='posts-map badge-posts {{likesHeat}}'>{{number topic.replyCount}}{{d-icon 'comments'}}</a>
-  </div>  
-</div>
-
-
 <div class="topic-actions">
   {{#if likeCount}}
     <div class="like-count">{{likeCount}}</div>
