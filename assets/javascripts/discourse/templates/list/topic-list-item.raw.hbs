@@ -44,17 +44,17 @@
       </div>
       {{raw 'list/topic-meta' likesHeat=likesHeat title=view.title topic=topic}}
       
- <div class="topic-meta">
-  {{raw-plugin-outlet name="topic-list-tiles-meta"}}
-  <div class="topic-views {{topic.viewsHeat}} inline sub">
-    {{number topic.views numberKey="views_long"}}
-    <span>{{i18n 'views_lowercase' count=topic.views}}</span>
-  </div>
+     <div class="topic-meta">
+      {{raw-plugin-outlet name="topic-list-tiles-meta"}}
+      <div class="topic-views {{topic.viewsHeat}} inline sub">
+        {{number topic.views numberKey="views_long"}}
+        <span>{{i18n 'views_lowercase' count=topic.views}}</span>
+      </div>
 
-    <div class='topic-replies posts-map {{likesHeat}} inline sub' title='{{title}}'>
-    <a href class='posts-map badge-posts {{likesHeat}}'>{{number topic.replyCount}}{{d-icon 'comments'}}</a>
-  </div>  
-</div>     
+        <div class='topic-replies posts-map {{likesHeat}} inline sub' title='{{title}}'>
+        <a href class='posts-map badge-posts {{likesHeat}}'>{{number topic.replyCount}}{{d-icon 'comments'}}</a>
+      </div>  
+    </div>     
       
       
       {{#if showActions}}
