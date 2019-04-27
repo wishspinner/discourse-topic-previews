@@ -1,4 +1,8 @@
 <div class="topic-actions">
+  <div class='topic-replies posts-map {{likesHeat}} inline sub' title='{{title}}'>
+    <a href class='posts-map badge-posts {{likesHeat}}'>{{number topic.replyCount}}{{d-icon 'comments'}}</a>
+  </div>  
+
   {{#if likeCount}}
     <div class="like-count">{{likeCount}}</div>
   {{/if}}
