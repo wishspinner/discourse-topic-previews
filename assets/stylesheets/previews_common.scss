@@ -47,7 +47,7 @@
     margin-bottom: 6px;
     border-radius: 3px;
     padding:10px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1 1 1 1 auto;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
@@ -56,6 +56,8 @@
      "details details details details details"
      "tags tags tags tags tags"
      "meta meta meta meta actions"
+    */
+    display: inline-block;
   }
 
   .tiles-grid-item:hover {
@@ -67,13 +69,14 @@
   }
 
   .topic-header-grid {
-    grid-area: theader;
+    /* grid-area: theader;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas:
     "title posters"
     "category posters"
+    */
   }
 
   .show-more.has-topics {
@@ -82,7 +85,7 @@
 
   .topic-title {
     font-size: 1.143em;
-    grid-area: title;
+    /* grid-area: title; */
     padding: 0 0 0 0;
 
      .link-top-line {
@@ -106,7 +109,7 @@
   }
 
   .topic-users {
-    grid-area: posters;
+    /* grid-area: posters; */
     padding: 0 0 5px 5px;
 
     .inline {
@@ -128,12 +131,12 @@
   }
 
   .topic-category{
-    grid-area: category;
+    /* grid-area: category; */
     padding: 0 0 4px 0;
   }
 
   .topic-thumbnail{
-    grid-area: photo;
+    /* grid-area: photo; */
     padding: 0 0 4px 0;
   }
 
@@ -144,7 +147,7 @@
   }
 
   .topic-details {
-    grid-area: details;
+    /* grid-area: details; */
     padding: 0 0 4px 0;
 
     .topic-excerpt {
@@ -159,7 +162,7 @@
   }
 
   .topic-tags {
-    grid-area: tags;
+    /* grid-area: tags; */
 
     .discourse-tags {
         display: inline-block;
@@ -167,7 +170,7 @@
   }
 
   .topic-meta{
-    grid-area: meta;
+    /* grid-area: meta; */
   }
 
   .topic-poster-names a {
@@ -198,7 +201,7 @@
   }
 
   .topic-actions {
-    grid-area: actions;
+    /* grid-area: actions; */
     float: right;
     justify-content: flex-end;
     text-align: right;
