@@ -10,7 +10,7 @@ export default {
   initialize(container){
     const site = container.lookup('site:main');
 
-    if (site.mobileView) return;
+    //if (site.mobileView) return;
 
     let discoveryTopicRoutes = [];
     let discoveryCategoryRoutes = [
