@@ -13,3 +13,7 @@ export default {
     });
   }
 }
+
+{{#if model.featured_topics}}
+  {{tlp-featured-topics featuredTopics=model.featured_topics}}
+{{/if}}
