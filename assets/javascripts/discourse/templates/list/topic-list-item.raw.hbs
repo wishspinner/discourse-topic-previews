@@ -36,6 +36,12 @@
         {{#if showActions}}
           {{raw "list/topic-actions" likeCount=likeCount topicActions=topicActions}}
           // this is the thumb likes 
+          {{#times likeCount}}
+          <span class="manyHearts">H</span>
+          {{/times}}          
+          
+          
+          
         {{/if}}
        
        {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
