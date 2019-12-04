@@ -58,7 +58,6 @@
       
       
       {{#if showActions}}
-        {{#each number topic.like_count}}{{d-icon 'heart'}}{{/each}}
         {{raw "list/topic-actions" likeCount=likeCount topicActions=topicActions}}
       {{/if}}
     {{/if}}
@@ -77,7 +76,6 @@
     <td class="num likes">
       {{#if hasLikes}}
         <a href='{{topic.summaryUrl}}'>
-        {{#each number topic.like_count}}{{d-icon 'heart'}}{{/each}}
           {{number topic.like_count}} {{d-icon 'heart'}}
         </a>
       {{/if}}
