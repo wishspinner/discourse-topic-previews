@@ -1,10 +1,6 @@
 <div class="topic-actions">
   {{#if likeCount}}
     <div class="like-count">{{likeCount}}</div>
-    {{#times likeCount}}
-    <span class="manyHearts">H</span>
-    {{/times}}
-    
   {{/if}}
   {{#each topicActions as |action|}}
     {{list-button action}}
