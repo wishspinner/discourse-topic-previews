@@ -76,6 +76,7 @@
     <td class="num likes">
       {{#if hasLikes}}
         <a href='{{topic.summaryUrl}}'>
+        {{#each number topic.like_count}}{{d-icon 'heart'}}{{/each}}
           {{number topic.like_count}} {{d-icon 'heart'}}
         </a>
       {{/if}}
