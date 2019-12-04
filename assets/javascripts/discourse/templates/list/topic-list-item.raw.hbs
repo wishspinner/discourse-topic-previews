@@ -58,7 +58,7 @@
       
       
       {{#if showActions}}
-        {{raw "list/topic-actions" likeCount=likeCount topicActions=topicActions}}
+        H? {{raw "list/topic-actions" likeCount=likeCount topicActions=topicActions}}
       {{/if}}
     {{/if}}
 </td>
@@ -87,6 +87,7 @@
     <td class="num likes">
       {{#if hasOpLikes}}
         <a href='{{topic.summaryUrl}}'>
+        {{#each number topic.like_count}}{{d-icon 'heart'}}{{/each}}
           {{number topic.op_like_count}} {{d-icon 'heart'}}
         </a>
       {{/if}}
