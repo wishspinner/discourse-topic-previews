@@ -9,7 +9,7 @@ registerUnbound('list-button', function(button, params) {
   return new Handlebars.SafeString(buttonHTML(button, params));
 });
 
-registerUnbound('times', function(n, block) {
+Handlebars.registerHelper('times', function(n, block) {
     var accum = '';
     for(var i = 0; i < n; ++i)
         accum += block.fn(i);
