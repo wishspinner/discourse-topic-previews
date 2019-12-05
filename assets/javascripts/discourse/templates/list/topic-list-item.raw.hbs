@@ -62,7 +62,7 @@
       
       {{#if showActions}}
         {{raw "list/topic-actions" likeCount=likeCount topicActions=topicActions}}
-          {{#times number topic.like_count}}
+          {{#times (number topic.like_count)}}
           <span class="manyHearts">{{d-icon 'heart'}}</span>
           {{/times}}        
       {{/if}}
