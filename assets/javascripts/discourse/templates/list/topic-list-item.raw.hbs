@@ -47,6 +47,14 @@
       </div>
       {{raw 'list/topic-meta' likesHeat=likesHeat title=view.title topic=topic}}
       
+       {{#if hasLikes}}
+          {{#times topic.like_count}}
+            <span class="manyHearts">H{{d-icon 'heart'}}</span>
+          {{/times}}
+          {{number topic.like_count}} {{d-icon 'heart'}}
+      {{/if}}        
+      
+      
      <div class="topic-meta-comments">
       {{raw-plugin-outlet name="topic-list-tiles-meta"}}
       <div class="topic-views {{topic.viewsHeat}} inline sub">
@@ -62,15 +70,6 @@
       
       {{#if showActions}}
         {{raw "list/topic-actions" likeCount=likeCount topicActions=topicActions}}
-       {{#if hasLikes}}
-          {{#times topic.like_count}}
-            <span class="manyHearts">H{{d-icon 'heart'}}</span>
-          {{/times}}
-
-          {{number topic.like_count}} {{d-icon 'heart'}}
-
-      {{/if}}        
-        
       {{/if}}
     {{/if}}
 </td>
